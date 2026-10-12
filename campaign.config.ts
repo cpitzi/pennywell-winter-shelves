@@ -14,23 +14,22 @@ import type { CampaignConfig } from "./src/config";
 
 const config: CampaignConfig = {
   // --- Identity --------------------------------------------------------------
-  name: "Your Campaign Name",
-  tagline: "A short line that says what you're raising money to do.",
-  siteUrl: "https://give.example.org", // no trailing slash
-  base: "/", // "/" for a custom domain; "/your-repo-name/" for a project Pages site
+  name: "Winter Shelves 2026",
+  tagline: "Keep the Pennywell Street Pantry stocked from Thanksgiving through March.",
+  siteUrl: "https://cpitzi.github.io/pennywell-winter-shelves", // no trailing slash
+  base: "/pennywell-winter-shelves/", // "/" for a custom domain; "/your-repo-name/" for a project Pages site
   lang: "en",
 
   // --- The ask ---------------------------------------------------------------
-  goal: "$25,000",
-  raised: "", // e.g. "$8,200" — set to show a progress meter, or leave "" to hide it
-  // raisedPercent: 33,     // or set the percent directly and skip the math
-  deadline: "November 4, 2026",
+  goal: "$12,000",
+  raised: "$3,150", // e.g. "$8,200" — set to show a progress meter, or leave "" to hide it
+  deadline: "December 20, 2026",
 
   // --- Content ---------------------------------------------------------------
   hero: {
     headline: "", // leave empty to use the campaign name
     subhead:
-      "One or two sentences that make the ask concrete: who this helps and what the money does.",
+      "Forty volunteers, one church basement, two distributions a week. This winter the shelves need to stay full for twelve more weeks than the pantry has money for. (This page is a timed drill of a template: the pantry and every person named are fictional.)",
     ctaLabel: "Donate",
   },
 
@@ -40,53 +39,46 @@ const config: CampaignConfig = {
       {
         heading: "The situation",
         paragraphs: [
-          "Replace this with the real story. Lead with a specific person, place, or moment — not statistics.",
-          "A second paragraph can add the stakes: what happens if the goal is met, and what happens if it isn't.",
+          "Demand is up a third since last winter. On Tuesdays the line now reaches the corner by 8:40, and the volunteers who pack bags the night before have started packing lighter ones so the last families in line get something.",
+          "Twelve thousand dollars means every family leaves with a full bag, every week, until the spring food-bank allocation lands in March. Short of that, the pantry starts rationing in January.",
         ],
       },
       {
         heading: "Where your money goes",
         paragraphs: [
-          "Be concrete about how funds are used. Donors give more when they can picture the outcome.",
+          "$25 fills one family's bag for a week. $150 covers the walk-in cooler's electric bill for a month. $1,000 buys a pallet of shelf-stable protein at the food-bank rate, which the pantry cannot get without paying up front.",
         ],
       },
     ],
   },
 
   // --- Donate: a widget HOSTED BY YOUR PROCESSOR -----------------------------
-  //  Pick ONE approach and delete the note in the other. See ./src/config.ts
-  //  and the "Choosing a processor" section of README.md for examples of
-  //  Givebutter / Zeffy / PayPal / Donorbox snippets.
   donate: {
     heading: "Chip in",
-    blurb: "Every contribution goes straight to the campaign. Give securely below.",
+    blurb: "Every contribution goes straight to the pantry through its own PayPal account. Give securely below.",
     // OPTION 1 — paste your processor's embed snippet here (wins if set):
     embedHtml: "",
     // OPTION 2 — or link to your processor-hosted donate page:
-    buttonUrl: "https://your-processor.example/your-campaign",
+    buttonUrl: "https://www.paypal.com/donate",
     buttonLabel: "Donate securely",
-    processorName: "your payment processor",
+    processorName: "PayPal",
   },
 
   // --- Contact / volunteer signup (no backend) -------------------------------
   contact: {
     heading: "Get involved",
-    blurb: "Want to volunteer, host an event, or ask a question? Reach out.",
-    email: "hello@example.org",
-    emailSubject: "I'd like to help with the campaign",
-    // formEmbedHtml: "",  // or paste a Google Forms / Tally / Jotform embed
+    blurb: "Want to pack bags on a Monday night, drive a pickup, or ask a question? Reach out.",
+    email: "volunteers@pennywell.example.org",
+    emailSubject: "I'd like to help with Winter Shelves",
   },
 
   // --- Look & footer ---------------------------------------------------------
   theme: {
-    accent: "#1b4b2e",
+    accent: "#7a3e1d",
     onAccent: "#ffffff",
   },
-  footerNote: "Paid for by Friends of Your Campaign.",
-  links: [
-    // { label: "Instagram", url: "https://instagram.com/yourcampaign" },
-    // { label: "Press kit", url: "https://example.org/press" },
-  ],
+  footerNote: "Paid for by the Pennywell Street Pantry, an all-volunteer food pantry. This page is a timed drill of a template; the pantry and every person named are fictional.",
+  links: [],
 };
 
 export default config;
